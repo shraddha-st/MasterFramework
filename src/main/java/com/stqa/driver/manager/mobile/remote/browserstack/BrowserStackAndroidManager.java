@@ -1,4 +1,4 @@
-package com.stqa.driver.manager.mobile.remote;
+package com.stqa.driver.manager.mobile.remote.browserstack;
 
 import com.stqa.config.factory.BrowserStackConfigFactory;
 import org.openqa.selenium.WebDriver;

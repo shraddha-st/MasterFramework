@@ -9,9 +9,9 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-public final class BrowserStackMobileFactory {
+public final class SauceLabsMobileFactory {
 
-    private BrowserStackMobileFactory(){}
+    private SauceLabsMobileFactory(){}
 
     private static final Map<MobilePlatformType, Supplier<WebDriver>>
             MAP = new EnumMap<>(MobilePlatformType.class);

@@ -1,11 +1,8 @@
 package com.stqa.config;
 
-import com.stqa.config.converters.StringToRemoteModeBrowserTypeConverter;
-import com.stqa.config.converters.StringToRunModeBrowserTypeConverter;
-import com.stqa.config.converters.StringToURLConverter;
+import com.stqa.config.converters.*;
 import com.stqa.enums.BrowserRemoteModeType;
 import com.stqa.enums.BrowserType;
-import com.stqa.config.converters.StringToBrowserTypeConverter;
 import com.stqa.enums.RunModeBrowserType;
 import org.aeonbits.owner.Config;
 
@@ -45,7 +42,7 @@ public interface FrameworkConfig extends Config {
     URL localAppiumServerURL();
 
     @Key("mobileRemoteMode")
-    @ConverterClass(StringToRemoteModeBrowserTypeConverter.class)
+    @ConverterClass(StringToMobileRemoteModeTypeConverter.class)
     BrowserRemoteModeType mobileRemoteMode();
 
     @Key("runModeMobile")
