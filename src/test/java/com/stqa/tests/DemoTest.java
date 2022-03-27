@@ -1,20 +1,16 @@
 package com.stqa.tests;
 
-import com.stqa.config.ConfigFactory;
-import com.stqa.config.FrameworkConfig;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.aeonbits.owner.ConfigCache;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.stqa.config.factory.BrowserStackConfigFactory;
+import com.stqa.config.factory.ConfigFactory;
 import org.testng.annotations.Test;
 
-public class DemoTest {
+public class DemoTest extends WebBase{
     // local, remote(selenium, selenoid, browserStack), : chrome, firefox
 
     @Test
     public void testLogin(){
 
-         System.out.println(ConfigFactory.getConfig().browser());
-
+//         System.out.println(ConfigFactory.getConfig().browser());
+//        System.out.println(BrowserStackConfigFactory.getConfig().browserStackURL());
     }
 }
